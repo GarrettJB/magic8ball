@@ -1,0 +1,84 @@
+.main{
+    background: linear-gradient(
+        rgba(0, 0, 0, .1),
+        rgba(0, 0, 0, 1)),
+    url('../media/background.jpg');
+
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+   /* background-color: brown; */
+    justify-content: center;
+    display: flex;
+}
+
+.title{
+    padding-top: 2vh;
+    font-size: 10vh;
+    color: white;
+    justify-content: center;
+    display: flex;
+    opacity: .9;
+}
+
+.ptag{
+    margin-top: -5vh;
+    font-size: 5vh;
+    color: white;
+    justify-content: center;
+    display: flex;
+    opacity: .8;
+}
+
+.input{
+   
+    justify-content: center;
+    display: flex;
+    margin-left: 0vh;
+}
+input{
+    height: 250px;
+    width:  100vh;
+    text-align: center;
+    opacity: .8;
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    z-index: 15;
+    position: absolute;
+}
+button{
+   z-index: 40;
+}
+.reset{
+    display: none;
+}
+
+.magic8Ball{
+    z-index: 2;
+    margin-right: -50%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.magic8Ball:hover{
+    opacity: 1;
+}
+
+.ground{
+    background: radial-gradient(
+        rgba(0, 0, 0, .5) 0.1%,
+        rgba(0, 0, 0, 1) 50%),
+    url('../media/dirt.jpg');
+
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
