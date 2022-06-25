@@ -18,7 +18,7 @@ const click = document.getElementById("button");
 click.addEventListener("click", randomFunction);
 
 document.forms["contact"].addEventListener('submit', function(event){
-    event.preventDefault();
+    event.preventDefault(); 
 })
 
 function randomFunction(){
