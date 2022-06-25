@@ -17,6 +17,10 @@ function startFunction(){
 const click = document.getElementById("button");
 click.addEventListener("click", randomFunction);
 
+document.forms["contact"].addEventListener('submit', function(event){
+    event.preventDefault();
+})
+
 function randomFunction(){
    
 
@@ -31,6 +35,7 @@ function randomFunction(){
         document.getElementById("magic8BallStart").src = `./media/magic8ball_anger.png`;
         document.getElementById("magic8Ball").src = `./media/magic8ball_anger.png`;
     } else {
+
         const newImg = Math.ceil(Math.random() * 20);
         let newSrc = `./media/magic8ball_${newImg}.png`
         document.getElementById("magic8Ball").src = newSrc;
